@@ -40,13 +40,15 @@ startBtn.addEventListener('click', () => {
 
 captureBtn.addEventListener("click", () => {
     const ctx = canvas.getContext('2d');
-
+    //2D 描画用のコンテキスト 画像や図形を自由に描画できる
     canvas.width = video.videoWidth;
     canvas.height = video.videoHeight;
     //キャンバスのサイズをビデオタグの解像度に合わしている
     ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
-
+    //映像をcanvasにコピーし静止画として記録される
     const imageDataUrl = canvas.toDataURL('image/png');
+    //canvasの内容をPNG画像のデータURLに変換している。ブラウザ上で操作しやすい形式
     photo.src = imageDataUrl;
+    //imgタグのsrcに画像データを送る 表示する
 });
 
