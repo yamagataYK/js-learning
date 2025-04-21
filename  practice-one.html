@@ -9,9 +9,13 @@
 <body>
     <h1>webカメラを表示する</h1>
     <video id="camera" autoplay playsinline></video>
+    <canvas id="snapshot" style="display: none;"></canvas>
 
     <button id="stopBtn">カメラ停止</button>
     <button id="startBtn">カメラ再開</button>
+    <button id="captureBtn">📸 写真を撮る</button>
+
+    <img id="photo" alt="キャプチャ画像" style="margin-top: 10px; border: 1px solid #888;">
 
     <script src="./js/practice-one.js"></script>
 </body>
