@@ -26,17 +26,17 @@ ok = ok ? 'ok' : 'No';
 
 // if文でかいたバージョン
 
-// function vegetableColor(vegetable) {
-//     if (vegetable === 'tomato') {
-//         console.log('tomato is red');
+function vegetableColor(vegetable) {
+    if (vegetable === 'tomato') {
+        console.log('tomato is red');
 
-//     } else if (vegetable === 'pumpkin') {
-//         console.log('pum is orange');
-//     } else if (vegetable === 'onion') {
-//         console.log('onion is white');
-//     }
-// }
-// vegetableColor('pumpkin')
+    } else if (vegetable === 'pumpkin') {
+        console.log('pum is orange');
+    } else if (vegetable === 'onion') {
+        console.log('onion is white');
+    }
+}
+vegetableColor('pumpkin')
 
 function vegetableColor(vegetable) {
     switch (vegetable) {
@@ -62,3 +62,14 @@ function vegetableColor(vegetable) {
     }
 }
 vegetableColor('tomato')
+
+let count = 100;
+while (count < 10) {
+    console.log(count);
+    count += 1;
+}
+
+let tomtoCount = 100;
+do {
+    tomatoCount += 1;
+} while (tomatoCount < 10);
