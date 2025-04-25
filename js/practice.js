@@ -73,3 +73,10 @@ let tomtoCount = 100;
 do {
     tomatoCount += 1;
 } while (tomatoCount < 10);
+
+
+
+for (let pumpkinCount = 0, i = 0, ; pumpkinCount < 10; pumpkinCount += 1) {
+
+}
+
