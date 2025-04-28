@@ -57,3 +57,8 @@ subtrack(10, 4, (result) => {
 
 });
 
+
+let fruits = ['apple', 'banana'];
+console.log(fruits);
+
+
