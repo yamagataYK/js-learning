@@ -53,12 +53,40 @@ subtrack(10, 3, (result) => {
 });
 
 subtrack(10, 4, (result) => {
-    alert(result);
+    // alert(result);
 
 });
 
-
+//配列
 let fruits = ['apple', 'banana'];
+fruits[2] = 'grape';
+fruits[10] = 'orange';
+delete fruits[10];
+fruits["hello"] = 'hello'
+fruits.length = 20;
 console.log(fruits);
 
 
+let fr = ['apple', , 'banana', 'orange'];
+for (const fruit of fr) {
+    // console.log(fruit);
+
+}
+fruit = [[1, 2, 3], [4, 5, 6],];
+console.log(fruit[1][2]);
+
+fru = ['apple', 'banana', 'grape'];
+const newFruits = [...fru, 'mango', 'peach'];
+fru.push('orange');
+console.log(newFruits, fru);
+
+const kaito = ['kaito', 20];
+let [name, age] = kaito;
+console.log(name, age);
+
+
+items = ['apple', 'banana', 'grape'];
+items.forEach((item) => {
+    console.log(item);
+
+});
