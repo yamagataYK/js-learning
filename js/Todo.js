@@ -14,6 +14,7 @@ form.addEventListener("submit", function (event) {
     event.preventDefault();
     add();
 });
+//submitにすると、Enterを押すと追加される
 
 function add(todo) {
     let todoText = input.value;
