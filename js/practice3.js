@@ -15,11 +15,11 @@ function saveItems(items) {
     localStorage.setItem("standard-item", JSON.stringify(items));
 }
 //最初の画面
-function renderInitialList() {
+function firstlist() {
     const items = getItems();
     items.forEach(item => {
         itemlist.insertAdjacentHTML(
-            "afterbegin",
+            "beforeend",
             `<li>
             <input type="checkbox" class="item-checkbox">
             ${item}</li>`)
@@ -29,20 +29,18 @@ function renderInitialList() {
 //保存ボタンをおしたときのやつ
 saveBtn.addEventListener("click", () => {
     const inputData = inputForm.value.trim();
-    if (!inputData) return;
+    if (!inputData) return;//入力欄が空のとき何もせず終わらす
 
     const items = getItems();
     items.push(inputData);
     saveItems(items);
     itemlist.insertAdjacentHTML(
-        "afterbegin",
+        "beforeend",
         `<li>
         <input type="checkbox" class="item-checkbox">
         ${inputData}</li>
         `)
-
-    inputForm.value = "";
-
+    inputForm.value = "";//保存した後、入力欄を空にすり
 });
 
 
@@ -50,7 +48,7 @@ saveBtn.addEventListener("click", () => {
 deleteBtn.addEventListener("click", () => {
     const checkboxs = document.querySelectorAll(".item-checkbox");
     const items = getItems();
-    const newItems = [];
+    const newItems = [];//削除後の新しい配列を作るための空の配列
 
     checkboxs.forEach((checkbox, index) => {
         if (!checkbox.checked) {
@@ -59,7 +57,7 @@ deleteBtn.addEventListener("click", () => {
     })
     saveItems(newItems);
     itemlist.innerHTML = "";
-    renderInitialList();
+    firstlist();
 })
 
-renderInitialList();
+firstlist();
