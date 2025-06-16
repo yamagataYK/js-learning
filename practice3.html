@@ -4,33 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/practice3.css">
     <title>ローカルストレージ</title>
 </head>
-<style>
-    .standard-item__list {
-        display: inline-block;
-        width: auto;
-        list-style: none;
-        background-color: #ffc9c9;
-    }
 
-    .item-checkbox {
-        padding: 4px;
-        border-radius: 20px;
-        background-color: #b3e6f6;
-        display: inline-block;
-        width: auto;
-
-    }
-</style>
 
 <body>
+    <div id="open">
+        追加をする
+    </div>
+    <div id="mask" class="hidden">
 
-    <div class="input-group">
+    </div>
+
+    <section class="input-group hidden">
+        <h2>商品詳細</h2>
         <input type="text" class="input-group__input">
         <button class="input-group__savebtn">保存</button>
         <button class="input-group__deletebtn">削除</button>
-    </div>
+        <div id="close">戻る</div>
+    </section>
 
     <ul class="standard-item__list">
         <!-- <li><input type="checkbox">牛乳</li> -->
