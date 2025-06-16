@@ -1,6 +1,6 @@
 const inputForm = document.querySelector(".input-group__input");
 const saveBtn = document.querySelector(".input-group__savebtn");
-const deleteBtn = document.querySelector(".input-group__deletebtn");
+const deleteBtn = document.querySelector(".deletebtn");
 const itemlist = document.querySelector(".standard-item__list")
 
 
@@ -64,19 +64,13 @@ firstlist();
 
 //モーダルウインドウ
 const open = document.querySelector("#open")
-const mask = document.querySelector("#mask")
 const modal = document.querySelector(".input-group")
 const close = document.querySelector("#close")
 
 open.addEventListener("click", () => {
     modal.classList.remove("hidden");
-    mask.classList.remove("hidden");
 })
 close.addEventListener("click", () => {
     modal.classList.add("hidden");
-    mask.classList.add("hidden");
 })
-mask.addEventListener("click", () => {
-    modal.classList.add("hidden");
-    mask.classList.add("hidden");
-})
+

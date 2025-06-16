@@ -1,62 +1,60 @@
-    .standard-item__list {
-        display: inline-block;
-        width: auto;
-        list-style: none;
-        background-color: #ffc9c9;
-    }
+#open {
+    width: 100px;
+    background-color: #b3e6f6;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 10px;
+    color: blue;
+}
 
-    .item-checkbox {
-        padding: 4px;
-        border-radius: 20px;
-        background-color: #b3e6f6;
-        display: inline-block;
-        width: auto;
-
-    }
-
-    #open {
-        width: 100px;
-        background-color: #b3e6f6;
-        cursor: pointer;
-        text-align: center;
-        padding: 10px 0;
-        border-radius: 10px;
-        color: blue;
-    }
+#close {
+    width: auto;
+    cursor: pointer;
+    padding: 10px 0;
+    border-radius: 10px;
+    color: blue;
+}
 
 
-    #close {
-        width: auto;
-        cursor: pointer;
-        padding: 10px 0;
-        border-radius: 10px;
-        color: blue;
-    }
 
-    #mask {
-        background: #333333;
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-    }
+.input-group {
+    background: #dafbfb;
+    width: 353px;
+    height: 353px;
+    box-shadow: 2px 4px 3px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 
-    .input-group {
-        background: #dafbfb;
-        width: 353px;
-        height: 353px;
-        position: absolute;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
+}
 
-    }
 
-    #mask.hidden {
-        display: none;
-    }
+.input-group.hidden {
+    opacity: 0;
+}
 
-    .input-group.hidden {
-        opacity: 0;
-    }
+.deletebtn {
+    width: 80px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.standard-item__list {
+    display: inline-block;
+    width: auto;
+    list-style: none;
+    background-color: #8bbedd;
+    border-radius: 20px;
+}
+
+.item-checkbox {
+    padding: 4px;
+    border-radius: 20px;
+    background-color: #b3e6f6;
+    display: inline-block;
+    width: auto;
+
+}
